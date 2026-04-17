@@ -4,11 +4,11 @@ This repository contains a responsive, accessible profile card built with plain 
 
 ## Live Demo
 
-- Live URL: `<add-your-live-url>`
+- Live URL: [Frontend Wizards Stage 1B Profile](https://hng-advanced-profile-stage1b.vercel.app/)
 
 ## Repository
 
-- GitHub URL: `<add-your-repo-url>`
+- GitHub URL: [vitus-john/HNG-advanced-profile-stage1b: A small, accessible, responsive Profile Card component/page using semantic HTML and modern frontend patterns (Use plain HTML, CSS and JS only).](https://github.com/vitus-john/HNG-advanced-profile-stage1b)
 
 ## Tech Stack
 
@@ -59,18 +59,17 @@ Optional per-link social IDs are also included:
 
 ## Project Structure
 
-```
+``` structure
 .
 |-- index.html
-|-- public/
-|   |-- style.css
-|   |-- script.js
-|   `-- 1750585599725.jfif
+|   style.css
+|   script.js
+|   1750585599725.jfif
 `-- README.md
 ```
 
 ## Submission
 
-- Submission form: https://docs.google.com/forms/d/e/1FAIpQLSfyENWbGf9qRkmDj77BIEAPkO0WwIqDpeR6_dte026HA-KuWQ/viewform
+- Submission form: <https://docs.google.com/forms/d/e/1FAIpQLSfyENWbGf9qRkmDj77BIEAPkO0WwIqDpeR6_dte026HA-KuWQ/viewform>
 
 Before submitting, replace the placeholder live and repository URLs above.
