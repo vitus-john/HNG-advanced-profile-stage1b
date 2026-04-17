@@ -2,7 +2,8 @@ const PROFILE_TICK_MS = 1000;
 
 const els = {
 	themeToggle: document.querySelector('[data-testid="theme-toggle-button"]'),
-	profileTime: document.querySelector('[data-testid="test-user-time"]')
+	profileTime: document.querySelector('[data-testid="test-user-time"]'),
+	footerYear: document.querySelector('[data-testid="footer-year"]')
 };
 
 let profileTickId = null;
@@ -40,6 +41,9 @@ function renderProfileTime() {
 function boot() {
 	initTheme();
 	renderProfileTime();
+	if (els.footerYear) {
+		els.footerYear.textContent = String(new Date().getFullYear());
+	}
 	profileTickId = setInterval(renderProfileTime, PROFILE_TICK_MS);
 }
 

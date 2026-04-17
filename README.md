@@ -1,72 +1,76 @@
-# Frontend Wizards Stage 1B
+# Frontend Stage 1B: Testable Profile Card
 
-This project contains required Stage 1B tasks:
+This repository contains a responsive, accessible profile card built with plain HTML, CSS, and JavaScript.
 
-Stage 1B: Testable Profile Card
+## Live Demo
 
-## Live URL
+- Live URL: `<add-your-live-url>`
 
-Add your hosted URL here after deployment:
+## Repository
 
-- Live: `<your-live-url>`
+- GitHub URL: `<add-your-repo-url>`
 
-## Repository URL
+## Tech Stack
 
-Add your GitHub repository URL:
+- HTML5 (semantic structure)
+- CSS3 (responsive layout with Grid/Flexbox)
+- Vanilla JavaScript (epoch time updates and theme behavior)
 
-- Repo: `<your-repo-url>`
+## Run Locally
 
-## Run locally
+1. Clone the repository.
+2. Open the project folder.
+3. Open `index.html` in a browser, or run with VS Code Live Server.
 
-Because this is plain HTML/CSS/JS, open `index.html` directly in a browser, or use a local server.
+## Stage 1B Requirement Coverage
 
-Example with VS Code Live Server:
-
-1. Open the folder in VS Code.
-2. Start Live Server on `index.html`.
-
-## Stage 1B (Testable Profile Card)
-
-Implemented all required content with exact test IDs:
+The following required test IDs are implemented:
 
 - `test-profile-card`
 - `test-user-name`
 - `test-user-bio`
-- `test-user-time` (updates continuously in milliseconds)
-- `test-user-avatar` (with meaningful `alt`)
-- `test-user-social-links` (+ individual social test IDs)
+- `test-user-time`
+- `test-user-avatar`
+- `test-user-social-links`
 - `test-user-hobbies`
 - `test-user-dislikes`
 
-Also implemented:
+In addition, visible UI elements across the profile page include `data-testid` attributes to support stable end-to-end checks.
 
-- Semantic HTML (`article`, `header`, `figure`, `nav`, `section`, lists)
-- Keyboard-focusable social links with visible focus style
-- `target="_blank"` + `rel="noopener noreferrer"` on social links
+Optional per-link social IDs are also included:
 
-## Responsive behavior
+- `test-user-social-github`
+- `test-user-social-twitter`
+- `test-user-social-linkedin`
 
-Designed for:
+## Accessibility Notes
 
-- Mobile (320px): vertical stacking, form fields stack cleanly
-- Tablet (768px): improved spacing and two-column form details
-- Desktop (1024px+): richer layout with avatar/content split and aligned controls
+- Avatar image includes meaningful `alt` text.
+- Semantic tags are used (`article`, `header`, `figure`, `nav`, `section`, `ul`, `li`).
+- Social links are keyboard-focusable and have visible focus styling.
+- Social links open in a new tab with `rel="noopener noreferrer"`.
+- Time output uses `aria-live="polite"` for assistive technologies.
 
-The layout avoids overflow with long titles and long description text via wrapping and collapsible content.
+## Responsiveness
 
-## Known limitations
+- Mobile: stacked card layout.
+- Tablet and desktop: split layout with avatar/social panel and profile details.
+- Lists and text wrap cleanly to prevent overflow on smaller screens.
 
-- Delete action currently hides the todo card in UI only (no undo, no persistence).
-- Data is in-memory and resets on page refresh.
+## Project Structure
 
-## Submission checklist
+```
+.
+|-- index.html
+|-- public/
+|   |-- style.css
+|   |-- script.js
+|   `-- 1750585599725.jfif
+`-- README.md
+```
 
-Before submission, update this README with:
+## Submission
 
-- Hosted live URL
-- Final repository URL
-- Any extra notes for evaluators
+- Submission form: https://docs.google.com/forms/d/e/1FAIpQLSfyENWbGf9qRkmDj77BIEAPkO0WwIqDpeR6_dte026HA-KuWQ/viewform
 
-Submission form:
-
-- [Submission Form](https://docs.google.com/forms/d/e/1FAIpQLSfyENWbGf9qRkmDj77BIEAPkO0WwIqDpeR6_dte026HA-KuWQ/viewform)
+Before submitting, replace the placeholder live and repository URLs above.

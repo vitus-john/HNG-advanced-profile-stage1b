@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Frontend Wizards Stage 1b Profile</title>
-	<link rel="stylesheet" href="/public/style.css" />
+	<title>Frontend Wizards Stage 1B Profile</title>
+	<link rel="stylesheet" href="./public/style.css" />
 </head>
 <body data-testid="page-body">
 	<main class="page-shell" data-testid="page-main">
@@ -16,27 +16,27 @@
 		</div>
 
 		<article class="profile-card" data-testid="test-profile-card" aria-label="User profile card">
-			<div class="card-strip" aria-hidden="true"></div>
+			<div class="card-strip" aria-hidden="true" data-testid="card-strip"></div>
 
-			<div class="card-body">
-				<div class="left-col">
-					<figure>
-						<div class="avatar-wrap">
+			<div class="card-body" data-testid="profile-card-body">
+				<div class="left-col" data-testid="profile-left-column">
+					<figure data-testid="profile-figure">
+						<div class="avatar-wrap" data-testid="profile-avatar-wrap">
 							<img
 								data-testid="test-user-avatar"
-								src="/public/1750585599725.jfif"
+								src="./public/1750585599725.jfif"
 								alt="Profile photo of Vitus John Oguike illustrated avatar"
 								width="110"
 								height="110"
 							/>
 						</div>
-						<figcaption>Software Engineer</figcaption>
+						<figcaption data-testid="profile-figure-caption">Software Engineer</figcaption>
 					</figure>
 
 					<nav data-testid="test-user-social-links" aria-label="Social media links">
-						<span class="social-title">Connect</span>
-						<ul class="social-list">
-							<li>
+						<span class="social-title" data-testid="social-title">Connect</span>
+						<ul class="social-list" data-testid="social-list">
+							<li data-testid="social-item-github">
 								<a
 									data-testid="test-user-social-github"
 									href="https://github.com/vitus-john"
@@ -50,10 +50,10 @@
 									GitHub
 								</a>
 							</li>
-							<li>
+							<li data-testid="social-item-twitter">
 								<a
 									data-testid="test-user-social-twitter"
-									href="https://twitter.com/Vitus Johnokonkwo"
+									href="https://x.com/SipboyJ"
 									target="_blank"
 									rel="noopener noreferrer"
 									aria-label="Vitus John on Twitter or X"
@@ -64,7 +64,7 @@
 									Twitter
 								</a>
 							</li>
-							<li>
+							<li data-testid="social-item-linkedin">
 								<a
 									data-testid="test-user-social-linkedin"
 									href="https://www.linkedin.com/in/vitus-john-a66b36266/"
@@ -82,18 +82,18 @@
 					</nav>
 				</div>
 
-				<div class="right-col">
-					<header class="card-head">
+				<div class="right-col" data-testid="profile-right-column">
+					<header class="card-head" data-testid="profile-card-header">
 						<h2 id="profile-name" data-testid="test-user-name" aria-label="Name Vitus John Oguike">Vitus John Oguike</h2>
-						<p class="name-role">Frontend Engineer - Abuja, NG</p>
+						<p class="name-role" data-testid="test-user-role">Frontend Engineer - Abuja, NG</p>
 					</header>
 
 					<p data-testid="test-user-bio" class="profile-bio">
 						I craft accessible fast web interfaces that put people first. Passionate about design systems and performance, I believe good code should be as readable as great prose.
 					</p>
 
-					<div class="time-block">
-						<span class="time-label">Epoch time</span>
+					<div class="time-block" data-testid="time-block">
+						<span class="time-label" data-testid="time-label">Epoch time</span>
 						<span
 							data-testid="test-user-time"
 							class="time-value"
@@ -103,26 +103,26 @@
 						></span>
 					</div>
 
-					<div class="two-col-lists">
-						<section aria-labelledby="hobbies-heading">
-							<h3 class="section-heading" id="hobbies-heading">Hobbies</h3>
+					<div class="two-col-lists" data-testid="interests-grid">
+						<section aria-labelledby="hobbies-heading" data-testid="hobbies-section">
+							<h3 class="section-heading" id="hobbies-heading" data-testid="hobbies-heading">Hobbies</h3>
 							<ul data-testid="test-user-hobbies" class="interest-list" aria-label="Hobbies list">
-								<li>Open-source contributing</li>
-								<li>Mechanical keyboard building</li>
-								<li>Generative art with p5.js</li>
-								<li>Afrobeats vinyl collecting</li>
-								<li>Rock climbing</li>
+								<li data-testid="hobby-item-1">Open-source contributing</li>
+								<li data-testid="hobby-item-2">Mechanical keyboard building</li>
+								<li data-testid="hobby-item-3">Generative art with p5.js</li>
+								<li data-testid="hobby-item-4">Afrobeats vinyl collecting</li>
+								<li data-testid="hobby-item-5">Rock climbing</li>
 							</ul>
 						</section>
 
-						<section aria-labelledby="dislikes-heading">
-							<h3 class="section-heading" id="dislikes-heading">Dislikes</h3>
+						<section aria-labelledby="dislikes-heading" data-testid="dislikes-section">
+							<h3 class="section-heading" id="dislikes-heading" data-testid="dislikes-heading">Dislikes</h3>
 							<ul data-testid="test-user-dislikes" class="interest-list" aria-label="Dislikes list">
-								<li>Untyped JavaScript codebases</li>
-								<li>Meetings that could be emails</li>
-								<li>Comic Sans in production</li>
-								<li>Infinite scroll without pagination</li>
-								<li>Slow CI pipelines</li>
+								<li data-testid="dislike-item-1">Untyped JavaScript codebases</li>
+								<li data-testid="dislike-item-2">Meetings that could be emails</li>
+								<li data-testid="dislike-item-3">Comic Sans in production</li>
+								<li data-testid="dislike-item-4">Infinite scroll without pagination</li>
+								<li data-testid="dislike-item-5">Slow CI pipelines</li>
 							</ul>
 						</section>
 					</div>
@@ -131,8 +131,8 @@
 		</article>
 	</main>
 <footer class="site-footer" data-testid="site-footer">
-		<p class="site-footer__text">&copy; <span id="footer-year"></span> Frontend Wizards Stage 1A. Crafted with care.</p>
+		<p class="site-footer__text" data-testid="site-footer-text">&copy; <span id="footer-year" data-testid="footer-year"></span> Frontend Wizards Stage 1B. Crafted with care.</p>
 	</footer>
-	<script src="/public/script.js"></script>
+	<script src="./public/script.js"></script>
 </body>
 </html>
